@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+    --color1: #03045E; /* white text */
+    --color2: #0077B6; /* white text */
+    --color3: #00B4D8; /* black text */
+    --color4: #90E0EF; /* black text */
+    --color5: #CAF0F8; /* black text */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--color5);
+    font-size: 18px;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: var(--color1);
+    color: white;
+    text-align: center;    
+}
+
+header img{
+    margin: 1rem;
+    border: white 3px solid;
+}
+
+main section{
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+main section:nth-child(odd){
+    background-color: var(--color3);
+}
+
+main section:nth-child(even){
+    background-color: var(--color4);
+}
+
+
+footer{
+    background-color: var(--color2);
+    color: white;   
+    text-align: center;
+}
+
+footer p{
+    margin: 2rem;
+    padding: 2rem 0;
+}
